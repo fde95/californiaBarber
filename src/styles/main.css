@@ -1,24 +1,36 @@
 body{
     background-color: black;
 }
+main{
+    overflow-x: hidden;
+}
 
 #cabecalho{
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.9);
     background-color: black;
-    opacity: 90%;
+    opacity: 98%;
     color: white;
 }
 .navbar-brand{
     width: 140px;
 }
 .nav-link{
-    color: white;
+    color: #e3d0c9;
 }
 .nav-link:hover{
-    color: gray;
+    color: #e3d0c9;
+    opacity: 80%;
 }
 .navbar-toggler-icon{
     color: white;
+}
+.navbar-toggler{
+    background-color:grey;
+    border: none;
+}
+.nav-pills .nav-link.active{
+    color: #0e360e;
+    background-color: #e3d0c9;
 }
 
 .hero{
@@ -35,6 +47,20 @@ body{
     top: 200px;
     left: 30%;
 }
+
+.cardsAboutUs{
+    background-color: #1c1d1d;
+    color: #e3d0c9
+}
+.imageBarberBeardTrim{
+    border-radius: 0 20px 20px 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.card-title{
+    font-family: 'Instrument Serif', serif;
+    font-size: 65px;
+}
+
 
 @media (max-width:767px){
     .navbar-brand{

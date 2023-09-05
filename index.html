@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- importando Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
 <!-- importando CSS Bootstrap e CSS-->
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -51,17 +55,34 @@
             </nav>
         </div>
     </header>
-
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
     <main>
-        <section>
+        <section id="aboutUs">
             <div class="hero"></div>
             <div class="container">
                 <div class="background text-center">
-                    <img class="logo" src="./src/images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in">
+                    <img class="logo" src="./src/images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="800">
                 </div>
-            </div>
+            </div>    
+
+                <div class="pt-5 pb-5 cardsAboutUs">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="w-100 imageBarberBeardTrim" src="./src/images/man-barbershop-salon-doing-haircut-beard-trim.jpg" alt="Barbeiro aparando a barba de um cliente" data-aos="fade-right">
+                        </div>
+                        <div class="col me-5">
+                            <div class="container" data-aos="fade-right" data-aos-duration="500">
+                                <h1 class="card-title mt-5">California Barbershop</h1>
+                                <p class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero est illum quae et voluptatum repudiandae reiciendis quas nulla neque eius. Corporis commodi consectetur ullam ipsam nulla dicta beatae, odit ipsa! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat placeat maiores sequi ipsa ullam quaerat illum consequatur harum dicta sit quam animi corrupti, accusantium, dolores quos ipsam veritatis, velit asperiores!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
+    </div>
 
 
 <!-- importando JS Bootstrap -->
