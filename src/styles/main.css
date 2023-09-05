@@ -1,14 +1,26 @@
 body{
     background-color: black;
 }
+
 #cabecalho{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
     background-color: black;
     opacity: 90%;
+    color: white;
 }
 .navbar-brand{
     width: 140px;
 }
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: gray;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+
 .hero{
     background-image: url(../images/young-man-barbershop-trimming-hair.jpg);
     height: 100vh;
@@ -21,4 +33,23 @@ body{
     padding-top:130px;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width:767px){
+    .hero{
+        background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+    }
+    .logo{
+        max-width: 350px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1023px){
+    .hero{
+        background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+        height: 70vh;
+    }
+    .logo{
+        max-width: 650px;
+    }
 }
