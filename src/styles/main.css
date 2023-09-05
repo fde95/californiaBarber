@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+}
+#cabecalho{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+    background-color: black;
+    opacity: 90%;
+}
+.navbar-brand{
+    width: 140px;
+}
+.hero{
+    background-image: url(../images/young-man-barbershop-trimming-hair.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 60%;
+    margin-top: -60px;
+}
+.background{
+    padding-top:130px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+}
