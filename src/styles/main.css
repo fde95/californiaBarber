@@ -38,6 +38,7 @@ body{
 @media (max-width:767px){
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+        height: 90vh;
     }
     .logo{
         max-width: 350px;

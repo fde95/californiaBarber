@@ -2,7 +2,8 @@ $(document).ready(function(){
 
     AOS.init({
         startEvent: 'DOMContentLoaded',
-        duration: 1000,
+        delay: 800,
+        duration: 3000,
         once: true,
     });
 })
