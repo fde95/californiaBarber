@@ -27,30 +27,40 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 60%;
-    margin-top: -60px;
+    margin-top: -120px;
+    position: relative;
 }
 .background{
-    padding-top:130px;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 200px;
+    left: 30%;
 }
 
 @media (max-width:767px){
+    .navbar-brand{
+        width: 100px;
+    }
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
-        height: 90vh;
+    }
+    .background{
+        top: 205px;
+        left: 37px;
     }
     .logo{
-        max-width: 350px;
+        max-width: 300px;
     }
 }
 
 @media (min-width:768px) and (max-width: 1023px){
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
-        height: 70vh;
+    }
+    .background{
+        top: 334px;
+        left: 110px;
     }
     .logo{
-        max-width: 650px;
+        max-width: 600px;
     }
 }
