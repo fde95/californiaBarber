@@ -21,16 +21,15 @@ main{
     color: #e3d0c9;
     opacity: 80%;
 }
-.navbar-toggler-icon{
-    color: white;
-}
+
 .navbar-toggler{
     background-color:grey;
     border: none;
+    color: white;
 }
 .nav-pills .nav-link.active{
-    color: #0e360e;
-    background-color: #e3d0c9;
+    color: white;
+    background-color:grey;
 }
 
 .hero{
@@ -60,6 +59,9 @@ main{
     font-family: 'Instrument Serif', serif;
     font-size: 65px;
 }
+.card-body{
+    text-align: justify;
+}
 
 
 @media (max-width:767px){
@@ -75,6 +77,9 @@ main{
     }
     .logo{
         max-width: 300px;
+    }
+    .imageBarberBeardTrim{
+        display: none;
     }
 }
 
