@@ -16,7 +16,7 @@
 
     <title>California Barber</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <img class="navbar-brand m-0" src="./src/images/logo-name-white.png" alt="California Barber Logo">
@@ -26,13 +26,19 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#aboutUs">
+                        <a class="nav-link" href="#hero">
                             <i class="bi bi-house-door-fill me-1"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#aboutUs">
+                            <i class="bi bi-book-fill me-1"></i>
                             Sobre
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#eventos">
+                        <a class="nav-link" href="#profissionais">
                             <i class="bi bi-person-vcard-fill me-1"></i>
                             Profissionais
                         </a>
@@ -54,61 +60,116 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
 
-    <main>
-        <section id="aboutUs">
-            <div class="hero"></div>
-            <div class="container">
-                <div class="background text-center">
-                    <img class="logo" src="./src/images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="800">
-                </div>
-                <div class="row w-100 text-center informations">
-                    <div class="col-4 informations--item">
-                        <h3 class="fs-4">Endereço</h3>
-                        <p class="informations--item--description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
-                        </p>
+        <main>
+            <section id="hero">
+                <div class="hero"></div>
+                <div class="container">
+                    <div class="background text-center">
+                        <img class="logo" src="./src/images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="800">
                     </div>
-                    <div class="col-4 informations--item">
-                        <h3 class="fs-4">Agendamento</h3>
-                        <p class="informations--item--description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
-                        </p>
-                    </div>
-                    <div class="col-4 informations--item">
-                        <h3 class="fs-4">Atendimento</h3>
-                        <p class="informations--item--description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
-                        </p>
-                    </div>
-                </div>
-            </div>    
-
-                <div class="pt-5 pb-5 cardsAboutUs">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-5">
-                            <img class="w-100 imageBarberBeardTrim" src="./src/images/man-barbershop-salon-doing-haircut-beard-trim.jpg" alt="Barbeiro aparando a barba de um cliente" data-aos="fade-right">
+                    <div class="row w-100 text-center informations">
+                        <div class="col-4 informations--item">
+                            <h3 class="fs-4">Endereço</h3>
+                            <p class="informations--item--description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
+                            </p>
                         </div>
-                        <div class="col me-5">
-                            <div class="container" data-aos="fade" data-aos-duration="500">
-                                <h1 class="card-title  mt-md-0 mt-5 mb-0">California Barbershop</h1>
-                                <i class="ms-1 fs-4">Transformando Barbearia em Arte.</i>
-                                <p class="card-body mt-3 ">
-                                    Imagine-se em uma pequena sala nos arredores ensolarados de Los Angeles. Agora, adicione a visão de dois amigos apaixonados pela arte da barbearia, Jack e Liam, que, com o amor pelo ofício, decidiram iniciar uma modesta barbearia chamada California Barber. Essa é a história que deu origem ao nosso estabelecimento.
-                                    Nos primeiros dias, éramos apenas uma barbearia local, uma joia escondida no bairro. No entanto, o que nos tornou únicos desde o início foi a nossa visão clara: criar um espaço onde cada cliente fosse tratado como um VIP. Jack e Liam, nossos fundadores, não estavam apenas interessados em cortar cabelo e aparar barbas, eles estavam comprometidos em proporcionar uma experiência excepcional.
-                                    Apaixonados pela ideia de transformar a barbearia em uma mistura de talento, estilo e hospitalidade, eles aprimoraram suas habilidades, acompanharam as tendências e, acima de tudo, cultivaram um ambiente acolhedor e amigável. A reputação da California Barber cresceu organicamente, à medida que os clientes satisfeitos compartilhavam suas experiências e traziam seus amigos em busca de cortes de cabelo precisos, barbas impecáveis e, é claro, uma atmosfera única.
-                                </p>
-                                <p class="card-body mt-1 ">
-                                    Convidamos você a fazer parte da nossa história na California Barber. Venha experimentar a diferença que a paixão e a dedicação podem fazer para a sua aparência e autoestima. Esteja pronto para se surpreender, relaxar e sair com um visual impecável.
-                                    Nós, da California Barber, estamos ansiosos para recebê-lo em nosso espaço e tornar a sua próxima visita uma experiência verdadeiramente memorável. Não apenas transformamos cabelos e barbas; transformamos vidas, uma navalhada de cada vez.                                </p>
+                        <div class="col-4 informations--item">
+                            <h3 class="fs-4">Agendamento</h3>
+                            <p class="informations--item--description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
+                            </p>
+                        </div>
+                        <div class="col-4 informations--item">
+                            <h3 class="fs-4">Atendimento</h3>
+                            <p class="informations--item--description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat voluptatem soluta culpa modi vel sit ad corrupti! Id voluptas autem optio. Reprehenderit aut natus quas perspiciatis deserunt, atque nobis!
+                            </p>
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            <section id="aboutUs">
+                <div class="line line-right" data-aos="fade-left"></div>
+                    <div class="pt-5 pb-5 cardsAboutUs">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-5">
+                                <img class="w-100 imageBarberBeardTrim" src="./src/images/man-barbershop-salon-doing-haircut-beard-trim.jpg" alt="Barbeiro aparando a barba de um cliente" data-aos="fade-right">
+                            </div>
+                            <div class="col me-5">
+                                <div class="container" data-aos="fade" data-aos-duration="500">
+                                    <h1 class="card-title  mt-md-0 mt-5 mb-0">California Barbershop</h1>
+                                    <i class="ms-1 fs-4">Transformando Barbearia em Arte.</i>
+                                    <p class="card-body mt-3 mb-0">
+                                        Imagine-se em uma pequena sala nos arredores ensolarados de Los Angeles. Agora, adicione a visão de dois amigos apaixonados pela arte da barbearia, Jack e Liam, que, com o amor pelo ofício, decidiram iniciar uma modesta barbearia chamada California Barber. Essa é a história que deu origem ao nosso estabelecimento.
+                                        Nos primeiros dias, éramos apenas uma barbearia local, uma joia escondida no bairro. No entanto, o que nos tornou únicos desde o início foi a nossa visão clara: criar um espaço onde cada cliente fosse tratado como um VIP. Jack e Liam, nossos fundadores, não estavam apenas interessados em cortar cabelo e aparar barbas, eles estavam comprometidos em proporcionar uma experiência excepcional.
+                                        Apaixonados pela ideia de transformar a barbearia em uma mistura de talento, estilo e hospitalidade, eles aprimoraram suas habilidades, acompanharam as tendências e, acima de tudo, cultivaram um ambiente acolhedor e amigável. A reputação da California Barber cresceu organicamente, à medida que os clientes satisfeitos compartilhavam suas experiências e traziam seus amigos em busca de cortes de cabelo precisos, barbas impecáveis e, é claro, uma atmosfera única.
+                                    </p>
+                                    <p class="card-body mt-0 ">
+                                        Na California Barber, nosso compromisso não se resume apenas à sua aparência, mas também ao seu bem-estar. Queremos que cada visita à nossa barbearia seja mais do que apenas um corte de cabelo ou uma barba bem-feita; queremos que seja uma experiência inesquecível. É por isso que oferecemos um ambiente onde você pode relaxar, recarregar as energias e cuidar de si mesmo.
+
+                                        Acreditamos que cada cliente é único e merece um tratamento personalizado. Ao escolher a California Barber, você está escolhendo um lugar onde a paixão e a dedicação se unem para elevar sua autoestima e realçar sua beleza. Cada corte, cada barba e cada interação com nossa equipe são cuidadosamente projetados para atender às suas necessidades e exceder suas expectativas.                                
+                                    </p>
+                                    <p class="card-body mt-1 ">
+                                        Convidamos você a fazer parte da nossa história na California Barber. Venha experimentar a diferença que a paixão e a dedicação podem fazer para a sua aparência e autoestima. Esteja pronto para se surpreender, relaxar e sair com um visual impecável.
+                                        Nós, da California Barber, estamos ansiosos para recebê-lo em nosso espaço e tornar a sua próxima visita uma experiência verdadeiramente memorável. Não apenas transformamos cabelos e barbas; transformamos vidas, uma navalhada de cada vez.                                
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+            </section>
+            <section id="profissionais">
+                <h2 class="card-title ms-5" data-aos="fade-right">Professionals in Visagism and Hair Styling</h2>
+                <div class="line line-left w-75" data-aos="fade-right"></div>
+                <div class="container">
+                    <div class="row professionals--list">
+                        <div class="col">
+                            <img src="http://via.placeholder.com/300x400" alt="">
+                                <h3>
+                                    Fulano
+                                </h3>
+                                <p>
+                                    Experiencia: 10 anos
+                                </p>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="http://via.placeholder.com/300x400" alt="">
+                                <h3>
+                                    Fulano
+                                </h3>
+                                <p>
+                                    Experiencia: 10 anos
+                                </p>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="http://via.placeholder.com/300x400" alt="">
+                                <h3>
+                                    Fulano
+                                </h3>
+                                <p>
+                                    Experiencia: 10 anos
+                                </p>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="http://via.placeholder.com/300x400" alt="">
+                                <h3>
+                                    Fulano
+                                </h3>
+                                <p>
+                                    Experiencia: 10 anos
+                                </p>
+                            </img>
+                        </div>
+                    </div>
                 </div>
-        </section>
-    </main>
-    </div>
+            </section>
+        </main>
+
 
 
 <!-- importando JS Bootstrap -->

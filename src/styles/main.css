@@ -3,6 +3,7 @@ body{
 }
 main{
     overflow-x: hidden;
+    color: #e3d0c9;
 }
 
 #cabecalho{
@@ -12,7 +13,7 @@ main{
     color: white;
 }
 .navbar-brand{
-    width: 140px;
+    width: 120px;
 }
 .nav-link{
     color: #e3d0c9;
@@ -44,6 +45,7 @@ main{
     position: absolute;
     top: 200px;
     left: 701px;
+    padding-top: 80px;
 }
 .logo{
     width: 500px;
@@ -56,7 +58,6 @@ main{
     border-radius: 10px 10px 0 0 ;
     padding: 5px 20px;
     margin: 0 auto;
-    color: #e3d0c9
 }
 .informations--item{
     border-right: 2px solid gray;
@@ -71,9 +72,25 @@ main{
 }
 
 
-.cardsAboutUs{
+
+#aboutUs{
+    padding: 100px 0 30px;
     background-color: #1c1d1d;
-    color: #e3d0c9
+}
+.line{
+    height: 3px;
+    width: 100vw;
+    background-color: #e3d0c9;
+}
+.line-right{
+    margin-top: -60px;
+    margin-left: 520px;
+    margin-bottom: 60px;
+}
+.line-left{
+    margin-left: -520px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .imageBarberBeardTrim{
     border-radius: 0 20px 20px 0;
@@ -87,7 +104,13 @@ main{
     text-align: justify;
 }
 
-
+#profissionais{
+    padding-top: 120px;
+}
+.professionals--list{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 @media (max-width:767px){
     .navbar-brand{
         width: 100px;
