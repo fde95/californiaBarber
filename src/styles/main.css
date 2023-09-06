@@ -21,7 +21,6 @@ main{
     color: #e3d0c9;
     opacity: 80%;
 }
-
 .navbar-toggler{
     background-color:grey;
     border: none;
@@ -44,8 +43,33 @@ main{
 .background{
     position: absolute;
     top: 200px;
-    left: 30%;
+    left: 701px;
 }
+.logo{
+    width: 500px;
+}
+.informations{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0 ;
+    padding: 5px 20px;
+    margin: 0 auto;
+    color: #e3d0c9
+}
+.informations--item{
+    border-right: 2px solid gray;
+    margin-top: 16px;
+}
+.informations--item:last-child{
+    border-right: none;
+}
+.informations--item--description{
+    color: grey;
+    font-size: 14px;
+}
+
 
 .cardsAboutUs{
     background-color: #1c1d1d;
@@ -81,6 +105,9 @@ main{
     .imageBarberBeardTrim{
         display: none;
     }
+    .informations{
+        display: none;
+    }
 }
 
 @media (min-width:768px) and (max-width: 1023px){
@@ -89,7 +116,7 @@ main{
     }
     .background{
         top: 334px;
-        left: 110px;
+        left: 160px;
     }
     .logo{
         max-width: 600px;
