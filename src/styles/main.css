@@ -160,7 +160,7 @@ main{
 }
 
 #servicos{
-    padding: 130px 0 50px;
+    padding: 130px 0 100px;
     background-color: #1c1d1d;
 }
 .price--old{
@@ -183,6 +183,50 @@ main{
     opacity: 100%;
 }
 
+
+.hero--contatos{
+    background-image: url(../images/heros/hero--contatos.jpg.png);
+    padding: 130px 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card--informacoes{
+    padding: 16px;
+    background-color: #e3d0c9;
+    border-radius: 8px;
+    color: black;
+}
+.form-control{
+    resize: none;
+}
+.btn{
+    background-color: #e3d0c9;
+    padding: 8px;
+    font-weight: bold;
+    opacity: 60%;
+    transition: .5s ease;
+}
+.btn:hover{
+    opacity: 100%;
+}
+.contatos--item{
+    color: #1c1d1d;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 60%;
+    transition: .5s ease;
+}
+.endereco{
+    font-size: 18px;
+}
+.contatos--item:hover{
+    color: #1c1d1d;
+    opacity: 100%;
+}
+.card--rodape{
+    font-size: 12px;
+    text-align: end;
+}
 
 @media (max-width:767px){
     .navbar-brand{
