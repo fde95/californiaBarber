@@ -69,6 +69,11 @@ main{
 .informations--item--description{
     color: grey;
     font-size: 14px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.link:hover{
+    color: white;
 }
 
 
@@ -114,6 +119,33 @@ main{
 .barbers{
     border-radius: 8px 8px 0 0;
 }
+.botaoAgendar{
+    margin: 0 30px;
+    padding: 12px 90px;
+    text-align: center;
+    background-color: #e3d0c9;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 60%;
+}
+.botaoAgendar:hover{
+    opacity: 100%;
+    color: black;
+}
+
+.profissionais--background{
+    margin-top: -400px;
+    width: 100vw;
+    height: 350px;
+    background-color: #1c1d1d;
+}
+
+
+
+
 @media (max-width:767px){
     .navbar-brand{
         width: 100px;
