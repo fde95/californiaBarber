@@ -72,10 +72,26 @@ main{
     text-decoration: none;
     font-size: 16px;
 }
+.link{
+    transition: .5s ease;
+}
 .link:hover{
     color: white;
 }
-
+.contact{
+    font-size: 18px;
+    padding: 8px 18px;
+    background-color: #e3d0c9;
+    color: #1c1d1d;
+    border-radius: 8px;
+    font-weight: bold;
+    opacity: 70%;
+    transition: .5s ease;
+}
+.contact:hover{
+    opacity: 100%;
+    color: #1c1d1d;
+}
 
 
 #aboutUs{
@@ -130,12 +146,12 @@ main{
     font-size: 18px;
     font-weight: bold;
     opacity: 60%;
+    transition: .5s ease;
 }
 .botaoAgendar:hover{
     opacity: 100%;
     color: black;
 }
-
 .profissionais--background{
     margin-top: -400px;
     width: 100vw;
@@ -143,7 +159,15 @@ main{
     background-color: #1c1d1d;
 }
 
-
+#servicos{
+    padding: 130px 0 30px;
+    background-color: #1c1d1d;
+    height: 100vh;
+}
+.price--old{
+    opacity: 70%;
+    text-decoration: line-through;
+}
 
 
 @media (max-width:767px){
