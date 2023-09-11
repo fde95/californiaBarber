@@ -186,7 +186,7 @@ main{
 
 .hero--contatos{
     background-image: url(../images/heros/hero--contatos.jpg.png);
-    padding: 130px 0 100px;
+    padding: 130px 0 150px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -226,6 +226,20 @@ main{
 .card--rodape{
     font-size: 12px;
     text-align: end;
+}
+.footer{
+    color: #e3d0c9;
+}
+.footer--link{
+    color: #e3d0c9;
+    font-weight: bold;
+    opacity: 30%;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.footer--link:hover{
+    color: #e3d0c9;
+    opacity: 100%;
 }
 
 @media (max-width:767px){
