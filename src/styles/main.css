@@ -160,9 +160,8 @@ main{
 }
 
 #servicos{
-    padding: 130px 0 900px;
+    padding: 130px 0 50px;
     background-color: #1c1d1d;
-    height: 100vh;
 }
 .price--old{
     opacity: 70%;
@@ -192,6 +191,19 @@ main{
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
     }
+    .card-title{
+        font-size: 45px;
+    }
+    .card-subtitle{
+        font-size: 18px;
+    }
+    .line-right{
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+    .line-left{
+        margin-left: -10px;
+    }
     .background{
         top: 205px;
         left: 37px;
@@ -205,17 +217,53 @@ main{
     .informations{
         display: none;
     }
+    .professionals--list{
+        text-align: center;
+    }
+    .professionals--list--item{
+        margin-bottom: 60px;
+    }
+    .destaques{
+        text-align: start;
+    }
+    .servicos--menu{
+        margin-bottom: 30px;
+    }
+    .submenu--espaco{
+        margin-bottom: 60px;
+    }
 }
 
 @media (min-width:768px) and (max-width: 1023px){
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
     }
+    .informations--item--description{
+        color: white;
+    }
+    .contact{
+        color: #1c1d1d;
+    }
     .background{
         top: 334px;
         left: 160px;
     }
+    .imageBarberBeardTrim{
+        display: none;
+    }
+    .card-title{
+        font-size: 50px;
+    }
+    .line-right{
+        margin-left: 210px;
+    }
+    .line-left{
+        margin-left: -20px;
+    }
     .logo{
         max-width: 600px;
+    }
+    .botaoAgendarServicos{
+        padding: 8px 105px;
     }
 }
