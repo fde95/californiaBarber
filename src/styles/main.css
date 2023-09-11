@@ -325,3 +325,14 @@ main{
         padding: 8px 105px;
     }
 }
+@media (min-width:1024px) and (max-width: 1800px){
+    .background{
+        position: absolute;
+        top: 100px;
+        left: 480px;
+        padding-top: 80px;
+    }
+    .logo{
+        width: 300px;
+    }
+}
