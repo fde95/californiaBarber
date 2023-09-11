@@ -168,7 +168,21 @@ main{
     opacity: 70%;
     text-decoration: line-through;
 }
-
+.botaoAgendarServicos{
+    text-align: center;
+    padding: 8px 140px;
+    background-color: #e3d0c9;
+    text-decoration: none;
+    color: #1c1d1d;
+    font-weight: bold;
+    opacity: 60%;
+    border-radius: 0 0 8px 8px;
+    transition: .5s ease;
+}
+.botaoAgendarServicos:hover{
+    color: #1c1d1d;
+    opacity: 100%;
+}
 
 @media (max-width:767px){
     .navbar-brand{
