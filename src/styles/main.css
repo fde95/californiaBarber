@@ -33,7 +33,7 @@ main{
 }
 
 .hero{
-    background-image: url(../images/heros/hero--desktop.jpg);
+    background-image: url(../images/hero--desktop.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,6 +121,9 @@ main{
     font-family: 'Instrument Serif', serif;
     font-size: 65px;
 }
+.card-subtitle{
+    font-size: 24px;
+}
 .card-body{
     text-align: justify;
 }
@@ -185,7 +188,7 @@ main{
 
 
 .hero--contatos{
-    background-image: url(../images/heros/hero--contatos.jpg.png);
+    background-image: url(../images/hero--contatos.jpg.png);
     padding: 130px 0 150px;
     background-size: cover;
     background-repeat: no-repeat;
