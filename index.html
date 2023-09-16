@@ -16,14 +16,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/styles.min.css">
+    
+    <link rel="stylesheet" href="./src/styles/main.css">
 
     <title>California Barber</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <img class="navbar-brand m-0" src="./images/logo-name-white.png" alt="California Barber Logo">
+            <img class="navbar-brand m-0" src="./src/images/logo-name-white.png" alt="California Barber Logo">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="bi bi-list"></span>
             </button>
@@ -67,13 +68,17 @@
 
         <main>
             <section id="hero">
-                <div class="hero"></div>
-                <div class="container">
-                    <div class="background text-center">
-                        <img class="logo" src="./images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="800">
+                <div class="hero position-relative"></div>
+                <div class="bloco--hero position-absolute bottom-0 text-center">
+                    <div class="row mb-lg-5 mb-md-5">
+                        <div class=".col-12 p-0 m-0 centralização--telas--pequenas">
+                            <div class="container mb-lg-5 mb-md-5">
+                                <img class="logo w-50" src="./src/images/logo-white.png" alt="California Barber Logo" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="800">
+                            </div>
+                        </div>
                     </div>
-                    <div class="row w-100 text-center informations">
-                        <div class="col-4 informations--item">
+                    <div class="row py-3 m-0 d-none d-md-flex informations">
+                        <div class="col-4 px-3 d-flex flex-column justify-content-center">
                             <h3 class="fs-4">Endereço</h3>
                             <a href="https://goo.gl/maps/voacAooj8zovwKjt7" target="_blank" class="informations--item--description link">
                                 Rua das Artes, 123 - Bairro da Elegância
@@ -82,35 +87,33 @@
                                 CEP: 01234-567 
                             </a>
                         </div>
-                        <div class="col-4 informations--item">
-                            <h3 class="fs-4 mb-md-4">Agendamento</h3>
+                        <div class="col-4 px-3 d-flex flex-column justify-content-center">
+                            <h3 class="fs-4 mb-md-3">Agendamento</h3>
                             <a href="tel:+5511912345678" target="_blank" class="informations--item--description contact">
                                 <i class="bi bi-whatsapp"></i> (11) 91234-5678
                             </a>
                         </div>
-                        <div class="col-4 informations--item">
+                        <div class="col-4 px-3 d-flex flex-column justify-content-center">
                             <h3 class="fs-4">Atendimento</h3>
-                            <p class="informations--item--description">
-                                Terça a Domingo
-                                <br/>
+                            <p class="informations--item--description horarios m-0">
                                 Terç. a Sex.: 9 AM - 10 PM
                                 <br/>
                                 Sáb. e Dom.: 8 AM - 7 PM
                             </p>
                         </div>
-                    </div>
-                </div>   
+                    </div> 
+                </div>
             </section>
             <section id="aboutUs">
                 <div class="line line-right" data-aos="fade-left"></div>
                     <div class="pt-5 pb-5 cardsAboutUs">
                         <div class="row">
-                            <div class="col-lg-3 col-md-0">
-                                <img class="w-100 imageBarberBeardTrim" src="./images/man-barbershop-salon-doing-haircut-beard-trim.jpg" alt="Barbeiro aparando a barba de um cliente" data-aos="fade-right">
+                            <div class="d-none d-xxl-block col-xl-3 ">
+                                <img class="w-100 imageBarberBeardTrim" src="./src/images/man-barbershop-salon-doing-haircut-beard-trim.jpg" alt="Barbeiro aparando a barba de um cliente" data-aos="fade-right">
                             </div>
-                            <div class="col-sm-12 col-lg-8 me-5">
+                            <div class="col col-xxl-8 me-lg-5 mx-md-auto">
                                 <div class="container" data-aos="fade" data-aos-duration="500">
-                                    <h1 class="card-title  mt-md-0 mt-lg-5 mb-0">California Barbershop</h1>
+                                    <h1 class="card-title  mt-md-0 mb-0">California Barbershop</h1>
                                     <i class="ms-1 card-subtitle">Transformando Barbearia em Arte.</i>
                                     <p class="card-body mt-3 mb-0">
                                         Imagine-se em uma pequena sala nos arredores ensolarados de Los Angeles. Agora, adicione a visão de dois amigos apaixonados pela arte da barbearia, Jack e Liam, que, com o amor pelo ofício, decidiram iniciar uma modesta barbearia chamada California Barber. Essa é a história que deu origem ao nosso estabelecimento.
@@ -135,13 +138,13 @@
                 <h2 class="card-title ms-5" data-aos="fade-right">Profissionais em Visagismo e Barbearia</h2>
                 <div class="line line-left w-75" data-aos="fade-right"></div>
                 <div class="container">
-                    <div class="row professionals--list">
-                        <div class="col-sm-12 col-md-6 col-lg-3 professionals--list--item mb-md-5" data-aos="fade" data-aos-duration="1000" data-aos-delay="600">
-                            <img class="barbers" src="./images/barbeiro-04.png" alt="Barbeiro Miguel Cardoso da equipe California Barber" />
+                    <div class="row mt-5 gap-3 gap-xl-0 mx-auto">
+                        <div class="col col-xl-3 professionals--list--item text-center" data-aos="fade" data-aos-duration="1000" data-aos-delay="600">
+                            <img class="barbers w-100" src="./src/images/barbeiro-04.png" alt="Barbeiro Miguel Cardoso da equipe California Barber" />
                             <h3 class="mt-4">
                                 Miguel Cardoso
                             </h3>
-                            <ul class="mb-5 destaques">
+                            <ul class="mb-5 destaques text-start">
                                 <li>
                                     Especialista em cortes clássicos
                                 </li>
@@ -152,52 +155,52 @@
                                     3 anos de experiência
                                 </li>
                             </ul>
-                                <a class="botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                <a class="btn w-100 botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 professionals--list--item mb-md-5" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
-                            <img class="barbers" src="./images/barbeiro-03.png" alt="Barbeiro Luca M. Carvalho da equipe California Barber" />
+                        <div class="col col-xl-3 professionals--list--item text-center mt-5 mt-md-0" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+                            <img class="barbers w-100" src="./src/images/barbeiro-03.png" alt="Barbeiro Luca M. Carvalho da equipe California Barber" />
                             <h3 class="mt-4">
                                 Luca M. Carvalho
                             </h3>
-                            <ul class="mb-5 destaques">
+                            <ul class="mb-5 destaques text-start">
                                 <li>
                                     Química e colorimetria
                                 </li>
                                 <li>
-                                    9x campeão do Barber Awards
+                                    3x campeão do Barber Awards
                                 </li>
                                 <li>
                                     +15 anos de experiência
                                 </li>
                             </ul>
-                                <a class="botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                <a class="btn w-100 botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 professionals--list--item mt-md-5 mt-lg-0" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
-                            <img class="barbers" src="./images/barbeiro-02.png" alt="Barbeiro Osvaldo Carvalho da equipe California Barber" />
+                        <div class="col col-xl-3 professionals--list--item text-center mt-5 mt-xl-0" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+                            <img class="barbers w-100" src="./src/images/barbeiro-02.png" alt="Barbeiro Osvaldo Carvalho da equipe California Barber" />
                             <h3 class="mt-4">
                                 Osvaldo Carvalho
                             </h3>
-                            <ul class="mb-5 destaques">
+                            <ul class="mb-5 destaques text-start">
                                 <li>
                                     Química e cortes clássicos
                                 </li>
                                 <li>
-                                    12x campeão do Barber Awards 
+                                    9x campeão do Barber Awards 
                                 </li>
                                 <li>
                                     +15 anos de experiência
                                 </li>
                             </ul>
-                                <a class="botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                <a class="btn w-100 botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 professionals--list--item mt-md-5 mt-lg-0" data-aos="fade" data-aos-duration="1000" data-aos-delay="600">
-                            <img class="barbers" src="./images/barbeiro-01.png" alt="Barbeiro Luiz Miranda da equipe California Barber" />
+                        <div class="col col-xl-3 professionals--list--item text-center mt-5 mt-xl-0" data-aos="fade" data-aos-duration="1000" data-aos-delay="600">
+                            <img class="barbers w-100" src="./src/images/barbeiro-01.png" alt="Barbeiro Luiz Miranda da equipe California Barber" />
                             <h3 class="mt-4">
                                 Luiz Miranda
                             </h3>
-                            <ul class="mb-5 destaques">
+                            <ul class="mb-5 destaques text-start">
                                 <li>
-                                    Cortes em tesoura e colorimetria
+                                    Cortes em tesoura
                                 </li>
                                 <li>
                                     2 vezes campeão nacional 
@@ -206,14 +209,14 @@
                                     6 anos de experiência
                                 </li>
                             </ul>
-                                <a class="botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                <a class="btn w-100 botaoAgendar" href="tel:+5591112345678" target="_blank">Agendar</a>
                         </div>
                     </div>
                 </div>
                 <div class="profissionais--background"></div>
             </section>
             <section id="servicos">
-                <div class="line line-right w-75" data-aos="fade-left"></div>
+                <div class="line line-right w-75 ajuste--smartphone" data-aos="fade-left"></div>
                 <h2 class="card-title text-center" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">Nossos Serviços</h2>
                 <div class="container mt-5">
                     <div class="row" data-aos="fade" data-aos-delay="500" data-aos-duration="2000">
@@ -226,9 +229,9 @@
                         <div class="col-md-10">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="cabelo">
-                                    <div class="row">
-                                        <div class="col-md-6 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/hair-cutting-1.png" alt="Corte de cabelo masculino com maquina">
+                                    <div class="row gap-xl-0">
+                                        <div class="col-md-6 col-xl-3 mx-auto mt-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/hair-cutting-1.png" alt="Corte de cabelo masculino com maquina">
                                             <h5 class="mt-3 ps-2 fw-bold">Fusion Cut</h5>
                                             <p class="ps-2 pe-2">
                                                 O mais pedido! Cortes modernos ou tradicionais feitos com duas tecnicas: Maquina e Tesoura. Indicado para quem busca cortes mais curtos.
@@ -238,10 +241,10 @@
                                                     R$80,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/hair-cutting-2.png" alt="Corte de cabelo masculino apenas com tesoura">
+                                        <div class="col-md-6 col-xl-3 mx-auto mt-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/hair-cutting-2.png" alt="Corte de cabelo masculino apenas com tesoura">
                                             <h5 class="mt-3 ps-2 fw-bold">Pure Scissor</h5>
                                             <p class="ps-2 pe-2">
                                                 Cortes sociais e tradicionais utilizando com precisão e elegancia a tecnica de corte com tesoura. Ideal para cabelos mais longos e estilos mais clássicos.
@@ -251,13 +254,13 @@
                                                     R$90,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
-                                        <div class="col-md-6 mt-md-5 mt-lg-0 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/hair-cutting-3.png" alt="Corte de cabelo e barba">
+                                        <div class="col-md-6 col-xl-3 mx-auto mt-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/hair-cutting-3.png" alt="Corte de cabelo e barba">
                                             <h5 class="mt-3 ps-2 fw-bold">Combo Precision Cut</h5>
                                             <p class="ps-2 pe-2">
-                                                Para quem busca uma experiência completa e única, resultando em um visual personalizado e ressaltando todo o potêncial da sua personalidade. O classico corte e barba.
+                                                O classico corte e barba. Para quem busca uma experiência completa e única, resultando em um visual personalizado e ressaltando todo o potêncial da sua personalidade.
                                             </p>
                                             <div class="price mb-4">
                                                 <span class="ps-3 pe-2 fs-5 price--old">
@@ -267,14 +270,27 @@
                                                     R$130,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                        </div>
+                                        <div class="col-md-6 col-xl-3 mx-auto mt-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/hair-cutting-1.png" alt="Corte de cabelo masculino com maquina">
+                                            <h5 class="mt-3 ps-2 fw-bold">Fusion Cut</h5>
+                                            <p class="ps-2 pe-2">
+                                                O mais pedido! Cortes modernos ou tradicionais feitos com duas tecnicas: Maquina e Tesoura. Indicado para quem busca cortes mais curtos.
+                                            </p>
+                                            <div class="price mb-4">
+                                                <span class="ps-3 fs-4 fw-bold">
+                                                    R$80,00
+                                                </span>
+                                            </div>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="barba">
-                                    <div class="row">
-                                        <div class="col-md-6 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/beard-shave-1.png" alt="Design de barba">
+                                    <div class="row gap-xl-0">
+                                        <div class="col-md-6 col-xl-3 mx-auto">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/beard-shave-1.png" alt="Design de barba">
                                             <h5 class="mt-3 ps-2 fw-bold">Beard Sculptor Pro</h5>
                                             <p class="ps-2 pe-2">
                                                 Oferecendo a você o design de barba de alta precisão que você merece. Esculpindo sua barba com maestria para um visual elegante e bem cuidado.
@@ -284,10 +300,10 @@
                                                     R$80,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
-                                        <div class="col-md-6 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/beard-shave-2.png" alt="Corte de barba total">
+                                        <div class="col-md-6 col-xl-3 mx-auto">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/beard-shave-2.png" alt="Corte de barba total">
                                             <h5 class="mt-3 ps-2 fw-bold">Clean Slate Shave</h5>
                                             <p class="ps-2 pe-2">
                                                 Experimente a suavidade e a sensação de um novo começo. Nossa técnica de remoção total da barba oferece um visual fresco, limpo, e suavidade à sua pele.
@@ -297,10 +313,10 @@
                                                     R$85,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
-                                        <div class="col-md-6 mt-md-5 mt-lg-0 col-lg-4 submenu--espaco">
-                                            <img class="d-block w-100 rounded-2" src="./images/beard-shave-3.png" alt="Barboterapia">
+                                        <div class="col-md-6 col-xl-3 mx-auto  mt-md-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/beard-shave-3.png" alt="Barboterapia">
                                             <h5 class="mt-3 ps-2 fw-bold">Beard Revive</h5>
                                             <p class="ps-2 pe-2">
                                                 Oferecemos uma combinação de tratamentos que incluem massagem, limpeza de pele e design de barba e sobrancelhas para restaurar o vigor e uma aparência saudável.
@@ -313,7 +329,23 @@
                                                     R$120,00
                                                 </span>
                                             </div>
-                                            <a class="botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
+                                        </div>
+                                        <div class="col-md-6 col-xl-3 mx-auto  mt-md-5 mt-xl-0">
+                                            <img class="d-block w-100 rounded-2" src="./src/images/beard-shave-3.png" alt="Barboterapia">
+                                            <h5 class="mt-3 ps-2 fw-bold">Beard Revive</h5>
+                                            <p class="ps-2 pe-2">
+                                                Oferecemos uma combinação de tratamentos que incluem massagem, limpeza de pele e design de barba e sobrancelhas para restaurar o vigor e uma aparência saudável.
+                                            </p>
+                                            <div class="price mb-4">
+                                                <span class="ps-3 pe-2 fs-5 price--old">
+                                                    R$150,00
+                                                </span>
+                                                <span class="ps-2 fs-4 fw-bold">
+                                                    R$120,00
+                                                </span>
+                                            </div>
+                                            <a class="btn w-100 botaoAgendarServicos" href="tel:+5591112345678" target="_blank">Agendar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -353,44 +385,45 @@
                                 </div>
                                 <div class="col-md-4 ms-md-5 mt-md-4">
                                     <div class="row card--informacoes" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800">
-                                        <h3 class="fs-5">
+                                        <h3 class="fs-5 text-center">
                                             Redes Sociais
                                         </h3>
                                         <div class="row text-center">
-                                            <div class="col-2 fs-3">
+                                            <div class="col-2 mx-auto fs-3">
                                                 <a href="https://www.linkedin.com/in/fde95/" target="_blank" rel="noopener noreferrer" class="contatos--item">
                                                     <i class="bi bi-instagram"></i>
                                                 </a>
                                             </div>
-                                            <div class="col-2 fs-3">
+                                            <div class="col-2 mx-auto fs-3">
                                                 <a href="https://www.linkedin.com/in/fde95/" target="_blank" rel="noopener noreferrer" class="contatos--item">
                                                     <i class="bi bi-facebook"></i>
                                                 </a>
                                             </div>
-                                            <div class="col-2 fs-3">
+                                            <div class="col-2 mx-auto fs-3">
                                                 <a href="https://www.linkedin.com/in/fde95/" target="_blank" rel="noopener noreferrer" class="contatos--item">
                                                     <i class="bi bi-youtube"></i>
                                                 </a>
                                             </div>
-                                            <div class="col-2 fs-3">
+                                            <div class="col-2 mx-auto fs-3">
                                                 <a href="https://www.linkedin.com/in/fde95/" target="_blank" rel="noopener noreferrer" class="contatos--item">
                                                     <i class="bi bi-whatsapp"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mt-4 card--informacoes" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="800">
+                                    <div class="row mt-4 card--informacoes text-center" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="800">
                                         <h3 class="fs-5">
                                             Endereço
                                         </h3>
                                         <a href="https://goo.gl/maps/voacAooj8zovwKjt7" target="_blank" class="contatos--item endereco">
-                                            Rua das Artes, 123 - Bairro da Elegância
+                                            Rua das Artes, 123
                                             <br/>
-                                            São Paulo - SP
-                                            CEP: 01234-567 
+                                            Bairro da Elegância
+                                            <br/>
+                                            São Paulo - SP - CEP: 01234-567 
                                         </a>
                                     </div>
-                                    <div class="row mt-4 card--informacoes" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="800">
+                                    <div class="row mt-4 card--informacoes text-center" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="800">
                                         <h3 class="fs-5">
                                             Agendamento
                                         </h3>
@@ -420,6 +453,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./js/scripts.min.js"></script>
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

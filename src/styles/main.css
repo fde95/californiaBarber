@@ -1,11 +1,15 @@
+:root{
+    --cor-texto-principal: #e3d0c9;
+    --cor-texto-secundario: #1c1d1d;
+}
 body{
     background-color: black;
 }
 main{
     overflow-x: hidden;
-    color: #e3d0c9;
-}
+    color: var(--cor-texto-principal);
 
+}
 #cabecalho{
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.9);
     background-color: black;
@@ -16,10 +20,10 @@ main{
     width: 120px;
 }
 .nav-link{
-    color: #e3d0c9;
+    color: var(--cor-texto-principal);
 }
 .nav-link:hover{
-    color: #e3d0c9;
+    color: var(--cor-texto-principal);
     opacity: 80%;
 }
 .navbar-toggler{
@@ -38,39 +42,20 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 60%;
-    margin-top: -120px;
-    position: relative;
+    margin-top: -110px;
 }
-.background{
-    position: absolute;
-    top: 200px;
-    left: 701px;
-    padding-top: 80px;
-}
-.logo{
-    width: 500px;
+
+.bloco--hero{
+    max-width: 1902px;
+    width: 100%;
+    overflow-x: hidden;
 }
 .informations{
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px 10px 0 0 ;
-    padding: 5px 20px;
-    margin: 0 auto;
-}
-.informations--item{
-    border-right: 2px solid gray;
-    margin-top: 16px;
-}
-.informations--item:last-child{
-    border-right: none;
 }
 .informations--item--description{
     color: grey;
-    font-size: 14px;
-    text-decoration: none;
-    font-size: 16px;
 }
 .link{
     transition: .5s ease;
@@ -81,7 +66,7 @@ main{
 .contact{
     font-size: 18px;
     padding: 8px 18px;
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
     color: #1c1d1d;
     border-radius: 8px;
     font-weight: bold;
@@ -90,21 +75,21 @@ main{
 }
 .contact:hover{
     opacity: 100%;
-    color: #1c1d1d;
+    color: var(--cor-texto-secundario);
 }
 
 
 #aboutUs{
-    padding: 100px 0 30px;
-    background-color: #1c1d1d;
+    padding: 40px 0 30px;
+    background-color: var(--cor-texto-secundario);
 }
 .line{
     height: 3px;
     width: 100vw;
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
 }
 .line-right{
-    margin-top: -60px;
+    margin-top: 60px;
     margin-left: 520px;
     margin-bottom: 60px;
 }
@@ -131,18 +116,13 @@ main{
 #profissionais{
     padding-top: 120px;
 }
-.professionals--list{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
 .barbers{
     border-radius: 8px 8px 0 0;
 }
 .botaoAgendar{
-    margin: 0 30px;
-    padding: 12px 90px;
     text-align: center;
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
     color: black;
     border-radius: 8px;
     text-decoration: none;
@@ -159,12 +139,12 @@ main{
     margin-top: -400px;
     width: 100vw;
     height: 350px;
-    background-color: #1c1d1d;
+    background-color: var(--cor-texto-secundario);
 }
 
 #servicos{
     padding: 130px 0 100px;
-    background-color: #1c1d1d;
+    background-color: var(--cor-texto-secundario);
 }
 .price--old{
     opacity: 70%;
@@ -172,17 +152,12 @@ main{
 }
 .botaoAgendarServicos{
     text-align: center;
-    padding: 8px 140px;
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
     text-decoration: none;
-    color: #1c1d1d;
-    font-weight: bold;
-    opacity: 60%;
-    border-radius: 0 0 8px 8px;
-    transition: .5s ease;
+    color: var(--cor-texto-secundario);
 }
 .botaoAgendarServicos:hover{
-    color: #1c1d1d;
+    color: var(--cor-texto-secundario);
     opacity: 100%;
 }
 
@@ -192,10 +167,11 @@ main{
     padding: 130px 0 150px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .card--informacoes{
     padding: 16px;
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
     border-radius: 8px;
     color: black;
 }
@@ -203,7 +179,7 @@ main{
     resize: none;
 }
 .btn{
-    background-color: #e3d0c9;
+    background-color: var(--cor-texto-principal);
     padding: 8px;
     font-weight: bold;
     opacity: 60%;
@@ -213,7 +189,7 @@ main{
     opacity: 100%;
 }
 .contatos--item{
-    color: #1c1d1d;
+    color: var(--cor-texto-secundario);
     font-size: 24px;
     text-decoration: none;
     opacity: 60%;
@@ -223,7 +199,7 @@ main{
     font-size: 18px;
 }
 .contatos--item:hover{
-    color: #1c1d1d;
+    color: var(--cor-texto-secundario);
     opacity: 100%;
 }
 .card--rodape{
@@ -231,17 +207,17 @@ main{
     text-align: end;
 }
 .footer{
-    color: #e3d0c9;
+    color: var(--cor-texto-principal);
 }
 .footer--link{
-    color: #e3d0c9;
+    color: var(--cor-texto-principal);
     font-weight: bold;
     opacity: 30%;
     text-decoration: none;
     transition: .5s ease;
 }
 .footer--link:hover{
-    color: #e3d0c9;
+    color: var(--cor-texto-principal);
     opacity: 100%;
 }
 
@@ -252,45 +228,33 @@ main{
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
     }
+    .centralização--telas--pequenas{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .card-title{
-        font-size: 45px;
+        font-size: 40px;
+    }
+    #aboutUs{
+        padding: 40px 0 30px;
+        background-color: var(--cor-texto-secundario);
     }
     .card-subtitle{
-        font-size: 18px;
+        font-size: 16px;
     }
     .line-right{
+        margin-top: 60px;
         margin-left: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
     .line-left{
-        margin-left: -10px;
-    }
-    .background{
-        top: 205px;
-        left: 37px;
-    }
-    .logo{
-        max-width: 300px;
-    }
-    .imageBarberBeardTrim{
-        display: none;
-    }
-    .informations{
-        display: none;
-    }
-    .professionals--list{
-        text-align: center;
-    }
-    .professionals--list--item{
-        margin-bottom: 60px;
-    }
-    .destaques{
-        text-align: start;
-    }
-    .servicos--menu{
+        margin-left: -30px;
+        margin-top: 30px;
         margin-bottom: 30px;
     }
-    .submenu--espaco{
+    .ajuste--smartphone{
         margin-bottom: 60px;
     }
 }
@@ -298,44 +262,35 @@ main{
 @media (min-width:768px) and (max-width: 1023px){
     .hero{
         background-image: url(../images/man-barbershop-salon-doing-haircut-beard-trim.jpg);
+        height: 100vh;
     }
-    .informations--item--description{
-        color: white;
+    .bloco--hero{
+        overflow-x: hidden;
     }
-    .contact{
-        color: #1c1d1d;
+    .logo{
+        padding-bottom: 180px;
     }
-    .background{
-        top: 334px;
-        left: 160px;
-    }
-    .imageBarberBeardTrim{
-        display: none;
+    .link, .horarios, .endereco{
+        font-size: 12px;
     }
     .card-title{
         font-size: 50px;
     }
+    #aboutUs{
+        padding: 40px 0 30px;
+        background-color: var(--cor-texto-secundario);
+    }
     .line-right{
-        margin-left: 210px;
+        margin-top: 60px;
+        margin-left: 300px;
+        margin-bottom: 60px;
     }
     .line-left{
-        margin-left: -20px;
-    }
-    .logo{
-        max-width: 600px;
-    }
-    .botaoAgendarServicos{
-        padding: 8px 105px;
+        margin-left: -100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 @media (min-width:1024px) and (max-width: 1800px){
-    .background{
-        position: absolute;
-        top: 100px;
-        left: 480px;
-        padding-top: 80px;
-    }
-    .logo{
-        width: 300px;
-    }
+
 }
